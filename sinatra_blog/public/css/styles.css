@@ -1,0 +1,68 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*border: 1px dotted red;*/
+}
+
+body {
+	  font-family: 'Special Elite', cursive;
+		color: white;
+		background-color: black;
+}
+
+h1 {
+	padding: 0.5em;
+	background-color: black;
+}
+
+p {
+	padding: 0.5em;
+	background-color: black;
+}
+
+h2 {
+	padding: 0.5em;
+	background-color: black;
+}
+
+.container {
+	background-color: black;
+}
+
+.nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav > li {
+	display: inline;
+	margin: 0.5em;
+	padding: 1em;
+}
+
+
+.blogEntryForm {
+	margin: 40 auto;
+	background-color: yellow;
+	text-align: center;
+}
+
+.formBox {
+	font-family: 'Special Elite', cursive;
+	font-size: 1em;
+	padding: 0.3em;
+	margin: 0.2em;
+	min-width: 90%;
+	background-color: lightblue;
+}
+
+.myButton {
+	background-color: white;
+	font-family: 'Special Elite', cursive;
+	font-size: 1em;
+	margin: 0.2em;
+	padding: 0.3em;
+	min-width: 90%;
+}

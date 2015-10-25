@@ -1,0 +1,44 @@
+<% content_for :new_entry do %>
+<p>Hi I'm the new entry page</p>
+<div>
+  <h2>
+    Hi there, this is the page for writing a new blog entry.
+  </h2>
+</div>
+<% end %>
+<div>
+  <p>
+    Put some stuff in here.
+  </p>
+  <form action='/new' method='POST'>
+    <fieldset class="blogEntryForm">
+      <input autocomplete="off" class="formBox" name="title" placeholder="Title" type="text">
+      <br>
+      <input autocomplete="off" class="formBox" name="date_written" type="datetime-local">
+      <br>
+      <input autocomplete="off" class="formBox" name="author" placeholder="Author" type="text">
+      <br>
+      <input autocomplete="off" class="formBox" name="entry" placeholder="Entry" type="text">
+      <br>
+      <input autocomplete="off" class="formBox" name="picture" placeholder="Picture" type="text">
+      <br>
+      <input class="myButton" type="submit" value="Enter">
+      <br>
+    </fieldset>
+  </form>
+  <div class="experimental">
+    <p>
+      <%= @parameters %>
+    </p>
+    <% @parameters.each do |key, value| %>
+    <p>
+      This is the key:
+      <%= key.upcase %>
+    </p>
+    <p>
+      And this is the value:
+      <%= value.upcase %>
+    </p>
+    <% end %>
+  </div>
+</div>

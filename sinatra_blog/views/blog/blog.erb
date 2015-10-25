@@ -1,0 +1,22 @@
+<% content_for :blog do %>
+<p>Hi, I'm the Blog page</p>
+<p>I'm supposed to be appearing in the magic changing section
+</p>
+<% end %>
+
+<h2>I am the Blog page</h2>
+<p>
+  I should appear on the page irrespective of other things
+</p>
+
+<% if @blog_entries %>
+<% @blog_entries.each do |key, value| %>
+<p>
+  <%= key %>
+</p>
+<p>
+  <%= value %>
+</p>
+
+<% end %>
+<% end %>
